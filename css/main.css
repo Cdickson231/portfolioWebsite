@@ -1,0 +1,372 @@
+/*Main Css */
+
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    outline:none;
+}
+body{
+    background-color:#35757f;
+    color:white;
+    font-family: 'Oswald';
+
+}
+
+.header{
+    width:100%;
+    height:30vh;
+    background-color: #35757f ;
+    border-radius: 5px;    
+    text-align:center;   
+}
+
+/*Text */
+h1{
+  font-size: 22px;
+  color:white;
+  text-align:center;
+}
+  h3{
+    color: white;
+  }
+
+  h4{
+    color: white;
+  }
+p {
+    font-size: 25px;
+    color: white;
+    margin-bottom: 45px;
+    font-family: 'Oswald';
+    text-align: center;
+  }
+
+  /*Parapulse For Logo*/
+.element{
+
+    animation-name:stretch;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+
+
+}
+
+
+@keyframes stretch{
+0%{
+    transform: scale(.25);
+    }
+    50%{
+        transform: scale(.75);
+    }
+    100%{
+
+        transform: scale(1);
+    }
+}
+
+/*Menu DropDown Overlay */
+.overlay{
+    height:0%;
+    width:100%;
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;    
+    background-color: #46939f;
+    overflow-y: hidden;
+    transition:0.5s;
+    opacity:0.9;
+}
+.overlay-content{
+    position: relative;
+    top: 25%;
+    width:100%;
+    text-align: center;
+    margin-top: 0;
+}
+
+.overlay a{
+padding:8px;
+text-decoration:none;
+font-size: 36px;
+color:white;
+display:block;
+transition:0.3s;
+opacity:1;
+}
+
+.overlay a:hover, .overlay a:focus{
+    color:#f1f1f1;
+    opacity:0.5;
+}
+
+.overlay .closebtn{
+    position:absolute;
+    top: 20px;
+    right:45px;
+    font-size:100px;
+}
+
+@media  screen and (max-height:450px){
+.overflow{overflow-y:auto;}
+.overlay a{font-size: 20px;}
+.overlay .closebtn{
+    font-size: 40px;
+    top:15px;
+    right:35px;
+
+}
+
+}
+/*Main Container */
+.flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    background-color: #4d8c97;
+    border-radius:5px;
+    align-items:center;
+}
+/*Boxes */
+.flex-container>div{
+    background-color: #3b7680;
+    display:flex;
+    margin:15px;
+    text-align: center;
+    line-height:45px;
+    font-size:35px;
+    font-family:'Oswald';
+    border-radius: 5px;
+    
+}
+/* Container for Clipped Images */
+.container{
+    position:relative;
+    width:700px;
+    height:500px;
+    background:#222;
+  }
+ 
+  .container .clip{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    transition:0.5s;
+  }
+  .container .clip.clip1 
+  {
+    background-image:url(/images/Batman.jpg);
+    
+    clip-path: polygon(0 0, 33% 0, 17% 100%, 0% 100%);
+    background-size:cover;
+    background-position:100% 25%  ;
+  }
+  
+  .container .clip.clip2{
+    background:url(/images/DarthVader.jpg);
+    
+    clip-path: polygon(33% 0, 67% 0, 35% 100%, 15% 100%);
+    background-size:cover;
+    background-position:35% 35%;
+   
+    
+  }
+  
+  .container .clip.clip3{
+    background:url(/images/blackcat.jpg);
+    
+  clip-path: polygon(67% 0, 81% 0, 72% 100%, 35% 100%);
+    background-size:cover;
+    background-position:35% 15%;
+    
+  }
+  
+  .container .clip.clip4{
+    background:url(/images/Leia.jpg);
+    
+    clip-path: polygon(80% 0, 100% 0, 100% 100%, 71% 100%);
+    background-size:cover;
+    background-position:10% 15%;
+    
+    
+  }
+  
+  .container:hover .clip{
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+  }
+  .container .clip:hover{
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+
+img{
+    border-radius: 8px;
+}
+
+     p.mobile { display: none }
+     @media (max-width: 640px) {
+         p.mobile { display: block }
+         p.desktop { display: none }
+     }
+  
+/*landingpage image change*/
+.change{
+    background-image: url("../images/full tmnt.jpg");
+    background-size: cover;
+    width: 750px;
+    height: 400px;
+    display: flex;
+}
+/*Index page image change*/
+@media only screen and (max-width:768px){
+    .change{
+        background-image: url("../images/gamora.jpg");
+        width:500px;
+        height:450px;
+        display:flex;
+    }
+}
+@media only screen and (max-width:500px){
+    .change{
+        background-image: url("../images/Tg.jpg");
+        width:300px;
+        height:400px;
+        display:flex;
+    }
+}
+
+/*External Links*/
+.row{
+    display:flex;
+}
+.column{
+    flex:45%;
+    padding-left:15%;
+}
+
+
+
+
+/*footer */
+footer{
+    text-align: center;
+    font-size:25px;
+}
+@media only screen and (max-width:500px){
+    .row{
+        display:none;
+    }
+
+}
+/*Mobile View */
+@media only screen and (max-width:500px){
+    .wrapper{
+        position: absolute;
+        top:60%;
+        left: 30%;
+        transform:translate(-25%, -25%);
+        max-width: 350px;
+        width:90%;
+        text-align: center;
+        padding:2.5px;
+         border-radius: 5px;
+        
+    }
+    .wrapper2{
+        display: none;
+    }
+
+      
+}
+/*Tablet view */
+@media only screen and (max-width:768px){
+    .container{
+        position:relative;
+        width:400px;
+        height:250px;
+        background:#222;
+      }
+    .container .clip{
+       
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            transition:0.5s;
+          
+    }
+    .container .clip.clip1 
+  {
+    background-image:url(/images/Batman.jpg);
+    
+    clip-path: polygon(0 0, 33% 0, 17% 100%, 0% 100%);
+    background-size:cover;
+    background-position:65% 35%  ;
+  }
+  
+  .container .clip.clip2{
+    background:url(/images/DarthVader.jpg);
+    
+    clip-path: polygon(33% 0, 67% 0, 35% 100%, 15% 100%);
+    background-size:cover;
+    background-position:45% 35%;
+   
+    
+  }
+  
+  .container .clip.clip3{
+    background:url(/images/blackcat.jpg);
+    
+  clip-path: polygon(67% 0, 81% 0, 72% 100%, 35% 100%);
+    background-size:cover;
+    background-position:50% 15%;
+    
+  }
+  
+  .container .clip.clip4{
+    background:url(/images/Leia.jpg);
+    
+    clip-path: polygon(80% 0, 100% 0, 100% 100%, 71% 100%);
+    background-size:cover;
+    background-position:35% 25%;
+    
+    
+  }
+  .container:hover .clip{
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+  }
+  .container .clip:hover{
+    
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  p{
+   font-size:20px;
+   font-weight:bold;
+  
+  }
+  .wrapper{
+    position: absolute;
+    top:50%;
+    left: 40%;
+    transform:translate(-25%, -25%);
+    max-width: 350px;
+    width:90%;
+    text-align: center;
+    padding:2.5px;
+     border-radius: 5px;
+    
+}
+  .wrapper2{
+    display: none;
+}
+}

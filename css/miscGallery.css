@@ -1,0 +1,494 @@
+
+/*Mixed Gallery CSS */
+body{
+   background: #46939f;
+    color:white;
+    font-family: 'Oswald';
+ }
+ 
+ .header {
+    
+   padding: 0;
+   text-align: center;
+   
+   
+ }
+ 
+/*Animated ParaPulse Logo*/
+ .element{
+ 
+    animation-name:stretch;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+ 
+ 
+ }
+ 
+ @keyframes stretch{
+ 0%{
+    transform: scale(.25);
+    }
+    50%{
+        transform: scale(.75);
+    }
+    100%{
+ 
+        transform: scale(1);
+    }
+ }
+ /*Text*/
+ h1{
+    font-size: 25px;
+    color:black;
+    text-align: center;
+ }
+ p {
+   font-size: 15px;
+   color: white;
+   margin-bottom: 45px;
+   
+   text-align: center;
+ }
+/*Overlay Menu */
+ .overlay{
+    height:0%;
+    width:100%;
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;    
+    background-color: #46939f;
+    overflow-y: hidden;
+    transition:0.5s;
+    opacity:0.9;
+ }
+ .overlay-content{
+    position: relative;
+    top: 25%;
+    width:100%;
+    text-align: center;
+    margin-top: 30px;
+ }
+ 
+ .overlay a{
+ padding:8px;
+ text-decoration:none;
+ font-size: 36px;
+ color:white;
+ display:block;
+ transition:0.3s;
+ opacity:1;
+ }
+ 
+ .overlay a:hover, .overlay a:focus{
+    color:#f1f1f1;
+    opacity:0.5;
+ }
+ 
+ .overlay .closebtn{
+    position:absolute;
+    top: 20px;
+    right:45px;
+    font-size:100px;
+ }
+ 
+ @media  screen and (max-height:450px){
+ .overflow{overflow-y:auto;}
+ .overlay a{font-size: 20px;}
+ .overlay .closebtn{
+    font-size: 35px;
+    top:15px;
+    right:35px;
+ 
+ }
+ 
+ }
+ 
+ /*large Screen to mobile text */
+ h1.mobile { display: none }
+ @media (max-width: 640px) {
+     h1.mobile { display: block }
+    h1.desktop { display: none }
+ }
+ 
+ 
+ /*main body for the images*/
+ .main{              
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding:0;   
+  }
+ 
+ 
+ /* -------------------Gallery Images------------------------------------*/
+ .thumb {
+ margin: 0;
+ padding: 0;    
+ max-height: 150px;
+ border-radius: 50% 20% / 10% 40%;
+ box-shadow:5px 5px 5px rgba(0, 0, 0, 0.6);
+
+ 
+ }
+ .thumb:hover{
+    border-radius: 0;
+    transition-delay: 0.30s;
+   
+ }
+ 
+ 
+ /*Text For the Images with White BackGrounds*/
+.text-block {
+    left: 35%;
+    width:30%;    
+    position: relative; 
+    bottom:92.5%;
+    font-size: 40px;
+    color: black;
+    font-family: 'Oswald';
+    
+}
+/*Text For the Images with Black BackGrounds*/
+.text-blockother{
+    left: 35%;
+    width:30%;    
+    position: relative; 
+    bottom:92.5%;
+    font-size: 40px;
+    color: white;
+    font-family: 'Oswald';
+    
+}
+/*LightBox Effect */
+ .lightbox {
+    position: fixed;
+    height: 0;
+    width: 0;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0);
+    opacity: 1;
+    overflow: hidden;
+ }
+ 
+ /*Larger Image*/
+ .lightbox img {
+    max-width: 100%;
+    max-height: 90%;
+    margin-top: 2%;
+    opacity: 0;
+ }
+ 
+ .lightbox:target {
+    
+    outline: none; 
+    width: 100%;
+    height: 100%;
+    opacity: 1 !important;
+    
+ }
+ 
+ .lightbox:target img {
+   
+    opacity: 1;
+    transition: opacity 0.9s;
+ }
+
+
+ /*Side Buttons for White backgrounds */
+ .light-btn {
+    color: black;
+    font-family:'Oswald';
+    font-size: 95px;
+    padding: 5px 15px;
+    border-radius: 1px;
+    text-decoration: none;
+    cursor: pointer;
+    vertical-align: middle;
+    position: absolute;
+    top: 35%;  
+ 
+ }
+ /*Side Buttons for Black backgrounds */
+ .light-btnOther {
+   color: white;
+   font-family:'Oswald';
+   font-size: 95px;
+   padding: 5px 15px;
+   border-radius: 1px;
+   text-decoration: none;
+   cursor: pointer;
+   vertical-align: middle;
+   position: absolute;
+   top: 35%;  
+
+}
+
+ /*Button Hover Effect*/
+ .light-btn:hover {
+    
+    opacity: 0.8;
+ }
+ /*Button Placement*/
+ .btn-prev {
+    left: 26.75%;
+ }
+ 
+ .btn-next {
+    right: 26.75%;
+ }
+
+ /*Close Button white Background*/
+ .btn-close {
+    position: absolute;
+    right:28%;
+    top: 2%;
+    font-size: 55px;
+    color: black;
+    padding: 2.5px 2.5px;
+    border-radius: 1px;
+    text-decoration: none;
+    font-family: 'Oswald';    
+ }
+  /*Close Button Black  Background*/
+ .btn-closeOther {
+   position: absolute;
+   right:28%;
+   top: 2%;
+   font-size: 55px;
+   color: white;
+   padding: 2.5px 2.5px;
+   border-radius: 1px;
+   text-decoration: none;
+   font-family: 'Oswald';    
+}
+ 
+ .btn-close:hover{
+     opacity:0.8;
+
+ }
+
+ /*For the External Links*/
+ .row{
+
+    display:flex;  
+  
+
+ }
+ .column{
+    justify-content: space-evenly;
+    flex-direction:row;
+    padding-left:15%;
+    
+ }
+ 
+ /*Footer*/
+ footer {
+     
+    position: relative;
+    text-align: center;
+    font-size: 45px;
+    top:20%;
+    left: 0;
+    bottom: 15%;
+    width: 100%;
+    height:70px; 
+    color: white;
+ }
+ 
+ /*Tablet View */
+ @media only screen and (max-width: 768px){
+   /*Tablets [601px -> 1200px]*/
+   .thumb {
+      margin: 10px;
+      padding: 0;    
+      max-height: 150px;
+      border-radius: 50% 20% / 10% 40%;
+      box-shadow:5px 5px 5px rgba(0, 0, 0, 0.6);
+          
+      }
+      .thumb:hover{
+         border-radius: 0;
+         transition-delay:.3s;
+        
+      }
+      
+   .text-block {
+      left: 40%;
+      width:20%;    
+      position: relative; 
+      bottom:57%;
+      font-size: 40px;
+      color: black;
+      
+   }
+
+   .light-btn {
+      color: black;
+      font-family:'Oswald';
+      font-size: 95px;
+      padding: 5px 15px;
+      border-radius: 1px;
+      text-decoration: none;
+      cursor: pointer;
+      vertical-align: middle;
+      position: absolute;
+      top: 25%;  
+   
+   }
+   .btn-prev {
+      left:10%;
+   }
+   
+   .btn-next {
+      right: 10%;
+   }
+   
+   .btn-close {
+      position: absolute;
+      right:15%;
+      top: 2%;
+      font-size: 45px;
+      color: black;
+      padding: 2.5px 2.5px;
+      border-radius: 1px;
+      text-decoration: none;
+      font-family: 'Oswald';    
+   }
+   .btn-closeOther {
+      position: absolute;
+      right:15%;
+      top: 2%;
+      font-size: 45px;
+      color: white;
+      padding: 2.5px 2.5px;
+      border-radius: 1px;
+      text-decoration: none;
+      font-family: 'Oswald';    
+   }
+   .text-blockother{
+      left: 35%;
+      width:30%;    
+      position: relative; 
+      bottom:10%;
+      font-size: 30px;
+      color: white;
+      font-family: 'Oswald';
+   }  
+
+   .lightbox img {
+      max-width: 75%;
+      max-height: 75%;
+      margin-top: 2%;
+      opacity: 0;
+   }
+   .row{
+      display:none;
+   }
+   .light-btnOther {
+      color: white;
+      font-family:'Oswald';
+      font-size: 95px;
+      padding: 5px 15px;
+      border-radius: 1px;
+      text-decoration: none;
+      cursor: pointer;
+      vertical-align: middle;
+      position: absolute;
+      top: 22%;  
+   
+   }
+   
+}
+
+/*Mobile View */
+@media only screen and (max-width: 500px){
+  /*Big smartphones [426px -> 600px]*/
+ 
+  .text-block {
+   left: 35%;
+   width:30%;    
+   position: relative; 
+  bottom:75%;
+   font-size: 35px;
+   color: black ;
+   font-weight:bold;
+}
+.text-blockother{
+   left: 35%;
+   width:30%;    
+   position: relative; 
+   bottom:10%;
+   font-size: 30px;
+   color: white;
+   font-family: 'Oswald';
+   font-weight:bold;
+}
+.btn-prev {
+   left:10%;
+}
+
+.btn-next {
+   right: 10%;
+}
+
+.btn-close {
+   position: absolute;
+   right:25%;
+   top: 2%;
+   font-size: 45px;
+   color: white;
+   padding: 2.5px 2.5px;
+   border-radius: 1px;
+   text-decoration: none;
+   font-family: 'Oswald';    
+}
+.row{
+   display:none;
+}
+.light-btnOther {
+   color: white;
+   font-family:'Oswald';
+   font-size: 95px;
+   padding: 5px 15px;
+   border-radius: 1px;
+   text-decoration: none;
+   cursor: pointer;
+   vertical-align: middle;
+   position: absolute;
+   top: 22%;  
+
+}
+.light-btn {
+   color: black;
+   font-family:'Oswald';
+   font-size: 60px;
+   padding: 5px 15px;
+   border-radius: 1px;
+   text-decoration: none;
+   cursor: pointer;
+   vertical-align: middle;
+   position: absolute;
+   font-weight:bold;
+   top: 25%;  
+
+}
+.btn-close {
+   position: absolute;
+   right:15%;
+   top: 2%;
+   font-size: 45px;
+   color: black;
+   padding: 2.5px 2.5px;
+   border-radius: 1px;
+   text-decoration: none;
+   font-family: 'Oswald';   
+   font-weight:bold; 
+}
+
+}

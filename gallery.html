@@ -1,0 +1,340 @@
+
+<!--Gallery Html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="js/main.js"></script>
+    <title>Gallery</title>
+</head>
+<body>
+    <!--Header Logo with Animated effect -->
+    <div class= "header"> 
+        <div class ="element">
+        <img src="images/logo3.gif" alt="CDicksonArtLogo" width="200" height="250">
+    </div>
+    </div>
+<!--Menu -->
+<div id = "myNav" class= "overlay">
+    <a href ="javascript:void(0)" class="closebtn" onClick="closeNav()">&times;</a>
+    <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href ="about.html">About</a>
+        <a href ="gallery.html">Comic Gallery</a>
+        <a href ="miscGallery.html">Mixed Media Gallery</a>
+        <a href ="contact.html">Contact and Social</a>
+    </div>
+</div>
+<span style="font-size: 30px; cursor:pointer" onclick="openNav()">&#9776;Menu</span>
+<!--Text -->
+<h1 class="desktop"> Welcome to the Comics Gallery everything here has been inked and coloured using PhotoShop.</h1>
+<h1 class="mobile"> Comics Gallery </h1>
+    <!--Main Body for the Images -->
+    <div class ="main"> 
+    <!--Gallery-->
+        <a href="#img1">
+            <img class="thumb" src="images/leia.jpg" alt="Leia">              
+        </a>     
+        
+        <div class="lightbox" id="img1">
+            <!--a href="#_" class="light-btn btn-prev">&lt;</a>-->
+                <a href="#" class="btn-close">X</a>
+                
+                <img src="images/leia.jpg" alt="Leia">
+                
+                <div class="text-block">Leia</div>
+            <a href="#img2" class="light-btn btn-next">></a>
+            
+        </div>
+        
+    
+        <a href="#img2">
+          <img class="thumb" src="images/tg.jpg" alt="TG">
+        </a>
+           <div class="lightbox" id="img2">
+            <a href="#img1" class="light-btn btn-prev">&lt;</a>
+                <a href="#" class="btn-close">X</a>
+                <img src="images/tg.jpg" alt="TG">
+                <div class="text-block">TigerLilly</div>                  
+            <a href="#img3" class="light-btn btn-next">></a>
+        </div>
+    
+        <a href="#img3">
+          <img class="thumb" src="images/batman.jpg" alt="Batman">
+        </a>
+       
+        <div class="lightbox" id="img3">
+            <a href="#img2" class="light-btn btn-prev">&lt;</a>
+                <a href="#" class="btn-close">X</a>
+                <img src="images/batman.jpg" alt="Batman">
+                 <div class="text-block">Batman</div>
+            <a href="#img4" class="light-btn btn-next">></a>
+        </div>
+    
+        <a href="#img4">
+            <img class="thumb" src="images/darthVader.jpg" alt="DarthVader">
+          </a>
+         
+          <div class="lightbox" id="img4">
+              <a href="#img3" class="light-btn btn-prev">&lt;</a>
+                  <a href="#" class="btn-close">X</a>
+                  <img src="images/darthVader.jpg" alt="DarthVader">
+                   <div class="text-block">Darth Vader</div>
+              <a href="#img5" class="light-btn btn-next">></a>
+          </div>
+    
+          <a href="#img5">
+            <img class="thumb" src="images/leo1.jpg" alt="leo1">
+          </a>
+        
+          <div class="lightbox" id="img5">
+              <a href="#img4" class="light-btn btn-prev">&lt;</a>
+                  <a href="#" class="btn-close">X</a>
+                  <img src="images/leo1.jpg" alt="leo1">
+                   <div class="text-block">Leonardo</div>
+              <a href="#img6" class="light-btn btn-next">></a>
+          </div>
+           <!--Images 5-10-->
+          <a href="#img6">
+            <img class="thumb" src="images/don1.jpg" alt="don1">
+          </a>     
+          <div class="lightbox" id="img6">
+              <a href="#img5" class="light-btn btn-prev">&lt;</a>
+                  <a href="#" class="btn-close">X</a>
+                  <img src="images/don1.jpg" alt="don1">
+                   <div class="text-block">Donatello</div>
+              <a href="#img7" class="light-btn btn-next">></a>
+          </div>
+    
+          <a href="#img7">
+            <img class="thumb" src="images/raph1.jpg" alt="raph1">
+        </a>
+          <div class="lightbox" id="img7">
+            <a href="#img6" class="light-btn btn-prev">&lt;</a>
+                <a href="#" class="btn-close">X</a>
+                <img src="images/raph1.jpg" alt="raph1">
+                 <div class="text-block">Rapheal</div>
+            <a href="#img8" class="light-btn btn-next">></a>
+        </div>
+    
+        <a href="#img8">
+            <img class="thumb" src="images/shredder.jpg" alt="Shredder1">
+        </a>
+          <div class="lightbox" id="img8">
+            <a href="#img7" class="light-btn btn-prev">&lt;</a>
+                <a href="#" class="btn-close">X</a>
+                <img src="images/shredder.jpg" alt="Shredder1">
+                 <div class="text-block">Shredder</div>
+            <a href="#img9" class="light-btn btn-next">></a>
+        </div>
+    
+        <a href="#img9">
+            <img class="thumb" src="images/kraang1.jpg" alt="kraang1">
+        </a>
+          <div class="lightbox" id="img9">
+            <a href="#img8" class="light-btn btn-prev">&lt;</a>
+                <a href="#" class="btn-close">X</a>
+                <img src="images/kraang1.jpg" alt="kraang1">
+                 <div class="text-block">Kraang</div>
+            <a href="#img10" class="light-btn btn-next">></a>
+        </div>
+    
+        <a href="#img10">
+            <img class="thumb" src="images/bebop1.jpg" alt="bebop1">
+        </a>
+          <div class="lightbox" id="img10">
+            <a href="#img9" class="light-btn btn-prev">&lt;</a>
+                <a href="#" class="btn-close">X</a>
+                <img src="images/bebop1.jpg" alt="bebop1">
+                 <div class="text-block">Bebop</div>
+            <a href="#img11" class="light-btn btn-next">></a>
+        </div>
+        <!--Images 11-15-->
+        <a href="#img11">
+            <img class="thumb" src="images/mickey3.jpg" alt="mickey3">
+        </a>
+          <div class="lightbox" id="img11">
+            <a href="#img10" class="light-btn btn-prev">&lt;</a>
+                <a href="#" class="btn-close">X</a>
+                <img src="images/mickey3.jpg" alt="mickey3">
+                 <div class="text-block">Michelangelo</div>
+            <a href="#img12" class="light-btn btn-next">></a>
+        </div>
+    
+        <a href="#img12">
+            <img class="thumb" src="images/blackcat.jpg" alt="blackcat">
+        </a>
+          <div class="lightbox" id="img12">
+            <a href="#img11" class="light-btn btn-prev">&lt;</a>
+                <a href="#" class="btn-close">X</a>
+                <img src="images/blackcat.jpg" alt="blackcat">
+                 <div class="text-block">Blackcat</div>
+            <a href="#img13" class="light-btn btn-next">></a>
+        </div>
+        <a href="#img13">
+            <img class="thumb" src="images/gizmoFinal.jpg" alt="gizmofinal">
+        </a>
+          <div class="lightbox" id="img13">
+            <a href="#img12" class="light-btn btn-prev">&lt;</a>
+                <a href="#" class="btn-close">X</a>
+                <img src="images/gizmoFinal.jpg" alt="gizmofinal">
+                 <div class="text-block">Gizmo</div>
+            <a href="#img14" class="light-btn btn-next">></a>
+        </div>
+        <a href="#img14">
+            <img class="thumb" src="images/mjThor.jpg" alt="MJThor">
+        </a>
+          <div class="lightbox" id="img14">
+            <a href="#img13" class="light-btn btn-prev">&lt;</a>
+                <a href="#" class="btn-close">X</a>
+                <img src="images/mjThor.jpg" alt="MJThor">
+                 <div class="text-block">Mary-Jane Thor</div>
+            <a href="#img15" class="light-btn btn-next">></a>
+        </div>
+    
+        <a href="#img15">
+            <img class="thumb" src="images/spiderGlow.jpg" alt="Spiderglow">
+        </a>
+          <div class="lightbox" id="img15">
+            <a href="#img14" class="light-btn btn-prev">&lt;</a>
+                <a href="#" class="btn-close">X</a>
+                <img src="images/spiderGlow.jpg" alt="Spiderglow">
+                 <div class="text-block">Spiderman</div>
+            <a href="#img16" class="light-btn btn-next">></a>
+        </div>
+     
+        <a href="#img16">
+            <img class="thumb" src="images/bowser.jpg" alt="bowser">
+        </a>
+          <div class="lightbox" id="img16">
+            <a href="#img15" class="light-btn btn-prev">&lt;</a>
+                <a href="#" class="btn-close">X</a>
+                <img src="images/bowser.jpg" alt="bowser">
+                 <div class="text-block">Bowser</div>
+            <a href="#img17" class="light-btn btn-next">></a>
+        </div>
+    
+        <a href="#img17">
+            <img class="thumb" src="images/mikey2.jpg" alt="mikey2">
+        </a>
+          <div class="lightbox" id="img17">
+            <a href="#img16" class="light-btn btn-prev">&lt;</a>
+                <a href="#" class="btn-close">X</a>
+                <img src="images/mikey2.jpg" alt="mikey2">
+                 <div class="text-block">Another Michelangelo</div>
+            <a href="#img18" class="light-btn btn-next">></a>
+        </div>
+    
+        <a href="#img18">
+            <img class="thumb" src="images/Optimus.jpg" alt="Optimus">
+        </a>
+          <div class="lightbox" id="img18">
+            <a href="#img17" class="light-btn btn-prev">&lt;</a>
+                <a href="#" class="btn-close">X</a>
+                <img src="images/Optimus.jpg" alt="Optimus">
+                 <div class="text-block">Optimus Prime</div>
+            <a href="#img19" class="light-btn btn-next">></a>
+        </div>
+        <a href="#img19">
+            <img class="thumb" src="images/mjVenom.jpg" alt="MJVenom">
+        </a>
+          <div class="lightbox" id="img19">
+            <a href="#img18" class="light-btn btn-prev">&lt;</a>
+                <a href="#" class="btn-close">X</a>
+                <img src="images/mjVenom.jpg" alt="MJVenom">
+                 <div class="text-block">Mary-Jane Venom</div>
+            <a href="#img20" class="light-btn btn-next">></a>
+        </div>
+    
+        <a href="#img20">
+            <img class="thumb" src="images/daredevil.jpg" alt="daredevil">
+        </a>
+          <div class="lightbox" id="img20">
+            <a href="#img19" class="light-btn btn-prev">&lt;</a>
+                <a href="#" class="btn-close">X</a>
+                <img src="images/daredevil.jpg" alt="daredevil">
+                 <div class="text-block">DareDevil</div>
+            <a href="#img21" class="light-btn btn-next">></a>
+        </div>
+    
+        <a href="#img21">
+            <img class="thumb" src="images/sonic.jpg" alt="sonic">
+        </a>
+          <div class="lightbox" id="img21">
+            <a href="#img20" class="light-btn btn-prev">&lt;</a>
+                <a href="#" class="btn-close">X</a>
+                <img src="images/sonic.jpg" alt="sonic">
+                 <div class="text-block">Sonic</div>
+            <a href="#img22" class="light-btn btn-next">></a>
+        </div>
+    
+        <a href="#img22">
+            <img class="thumb" src="images/red3.jpg" alt="red3">
+        </a>
+          <div class="lightbox" id="img22">
+            <a href="#img21" class="light-btn btn-prev">&lt;</a>
+                <a href="#" class="btn-close">X</a>
+                <img src="images/red3.jpg" alt="red3">
+                 <div class="text-block">Red Riding Hood</div>
+            <a href="#img23" class="light-btn btn-next">></a>
+        </div>
+        <a href="#img23">
+            <img class="thumb" src="images/wolverine.jpg" alt="wolverine">
+        </a>
+          <div class="lightbox" id="img23">
+            <a href="#img22" class="light-btn btn-prev">&lt;</a>
+                <a href="#" class="btn-close">X</a>
+                <img src="images/wolverine.jpg" alt="wolverine">
+                 <div class="text-block">Wolverine</div>
+            <a href="#img24" class="light-btn btn-next">></a>
+        </div>
+        <a href="#img24">
+            <img class="thumb" src="images/batman2.jpg" alt ="Batman">       
+        </a>
+        
+          <div class="lightbox" id="img24">
+            <a href="#img23" class="light-btn btn-prev">&lt;</a>
+                <a href="#" class="btn-close">X</a>
+                <img src="images/batman2.jpg" alt="batman">
+                 <div class="text-block">Another Batman</div>
+            <a href="#img25" class="light-btn btn-next">></a>
+        </div>
+        <a href="#img25">
+            <img class="thumb" src="images/mickey1.jpg" alt="mickey1">
+        </a>
+          <div class="lightbox" id="img25">
+            <a href="#img24" class="light-btn btn-prev">&lt;</a>
+                <a href="#" class="btn-close">X</a>
+                <img src="images/mickey1.jpg" alt="mickey1">
+                 <div class="text-block">Another Michelangelo</div>
+            <!--<a href="#img1" class="light-btn btn-next">></a>-->
+          </div>
+    </div>
+    <br>
+    <br>
+     <!--External Links-->
+    <div class="row">
+        <div class="column">
+        <a href ="https://www.instagram.com/cdickson231/">
+          <img src="images/insta2.png" alt="insta2" style="width:25%">
+          </a>
+        </div>
+        <div class="column">
+            <a href ="https://www.deviantart.com/eggman231">
+            <img src="images/deviant.png" alt="Deviant" style="width:25%">
+        </a>
+          </div>
+          <div class="column">
+            <a href ="https://www.redbubble.com/people/iamtheeggman231/shop?asc=u">
+            <img src="images/redbubble2.png" alt="redbubble" style="width:25%">
+            </a>
+          </div>
+    </div>
+<!--Footer-->
+<footer>CDicksonArt</footer>
+    
+</body>
+</html>
